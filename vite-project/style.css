@@ -1,7 +1,7 @@
 :root {
     --light:  #ffffff;
     --dark:  #000000;
-    --primary:  var(--dark);
+    --primary:var(--dark);
     --h1:  7.592rem;
     --h2:  5.063rem;
     --h3:  3.375rem;
@@ -19,15 +19,17 @@ padding: 0px;
 }
 
 .light {
-    --primary: var(--light);
+    background-color: var(--light);
     color: rgb(0, 0, 0);
 }
 
 .dark {
-    --primary: var(--dark);
+    background-color: var(--dark);
     color: rgb(255, 255, 255);
 }
-
+button {
+    font-size: 15px;
+}
 h1 {
     font-size: var(--h1);
 }
@@ -44,5 +46,5 @@ h5 {
     font-size: var(--h5);
 }
 h1,h2,h3,h4,h5 {
-    text-align: center;
+  
 }
