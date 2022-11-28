@@ -1,8 +1,18 @@
-document.querySelector(".btn").addEventListener("click", function () {
+const DOMSelectors = {
+  button: document.getElementById("btn"),
+  container: document.getElementById("container"),
+  input: document.getElementById("filter"),
+};
+
+DOMSelectors.button.addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList = "dark";
+    DOMSelectors.button.classList = "dark";
+    DOMSelectors.input.classList = "dark";
   } else {
     document.body.classList = "light";
+    DOMSelectors.button.classList = "light";
+    DOMSelectors.input.classList = "light";
   }
 });
 

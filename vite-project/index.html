@@ -5,66 +5,28 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;900&display=swap" rel="stylesheet">
     <title>Bon Appe-Vite</title>
   </head>
   <body class="light">
     <div id="parent">
       <div class="title">
         <h1>GameStop</h1>
-        <button class="btn">Change Mode</button>
-        <h3>All Products</h3>
+        <div class="dom">
+          <button id = "btn" class="light">Change Mode</button>
+        <h4 class="filter">Filter</h4>
+        <select type="input" class="input" id="filter">
+          <option>All Products</option>
+          <option>Playstation</option>
+          <option>Xbox</option>
       </div>
-      <div class="container">
-        <form
-          action="https://www.gamestop.com/video-games/products/call-of-duty-modern-warfare-ii-cross-gen-bundle---xbox-one-and-xbox-series-x-s/344752.html"
-        >
-          <button>
-            <img src="CODMW2.jpg" alt="CODMW2" height="200" width="355.55" />
-            <h5>Call Of Duty : Modern Warfare 2 (PS5, Series X)</h5>
-          </button>
-        </form>
-        <form
-          action="https://www.gamestop.com/video-games/products/god-of-war-ragnarok-launch-edition---playstation-5/344870.html"
-        >
-          <button>
-            <img
-              src="https://www.outfable.com/wp-content/uploads/2022/11/image_editor_output_image1638895758-1667718243069.jpg"
-              alt="GOW"
-              height="200"
-              width="355.55"
-            />
-            <h5>God of War : Ragnarök (PS5, 4)</h5>
-          </button>
-        </form>
-        <form
-          action="https://www.gamestop.com/pc-gaming/pc-games/products/twitch-50/216861.html"
-        >
-          <button>
-            <img
-              src="https://images.g2a.com/600x351/1x1x0/twitch-gift-card-100-usd-twitch-key-united-states/5f16ea287e696c7ba01ff422"
-              src="https://pc.watch.impress.co.jp/img/pcw/list/1251/945/01.jpg"
-              alt="TwitchCard"
-              height="200"
-              width="355.55"
-            />
-            <h5>Twitch Gift Card : $50</h5>
-          </button>
-        </form>
-        <form
-          action="https://www.gamestop.com/gift-cards/products/apex-legends-1000-coins/191878.html"
-        >
-          <button>
-            <img
-              src="https://media.gamestop.com/i/gamestop/10173142/Apex-Legends-1000-Coins"
-              alt="Apex Legends"
-              height="200"
-              width="200.55"
-            />
-            <h5>Apex Legends $10 Gift Card</h5>
-          </button>
-        </form>
+        
       </div>
-    </div>
+      <div id = "container" class="container">
+
+      </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>
