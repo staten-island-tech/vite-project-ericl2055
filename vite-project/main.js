@@ -16,6 +16,12 @@ DOMSelectors.button.addEventListener("click", function () {
   }
 });
 
+function filter() {
+  if (DOMSelectors.input === "All Products") {
+    console.log(products);
+  }
+}
+
 const products = [
   {
     name: "Call Of Duty : Modern Warfare 2 (PS5, Series X/S)",
