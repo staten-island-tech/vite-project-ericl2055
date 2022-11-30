@@ -19,7 +19,7 @@ padding: 0px;
 font-family: 'Fira Sans', sans-serif;
 }
 
-.input {
+select {
     font-size: 1.5rem;
     border-color: beige; 
     position: absolute;

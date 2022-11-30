@@ -1,9 +1,9 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
-  container: document.getElementById("container"),
   input: document.getElementById("filter"),
+  container: document.getElementById("container"),
 };
-
+console.log(DOMSelectors.container);
 DOMSelectors.button.addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList = "dark";
@@ -51,3 +51,25 @@ const products = [
     ],
   },
 ];
+
+products.forEach((products) => {
+  products.compatible.forEach((compatible) => console.log(compatible));
+});
+
+function create() {
+  products.forEach((products) => {
+    let name = products.name;
+    let price = products.price;
+    let compatibility = products.compatible;
+    DOMSelectors.container.insertAdjacentHTML(
+      "beforeend",
+      `<div id = cards>
+      <h3> ${name}</h3>
+      <h4>${price}</h4>
+      <p>${compatibility}</p>  
+      </div>`
+    );
+  });
+}
+
+create(products);
