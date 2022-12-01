@@ -3,7 +3,6 @@ const DOMSelectors = {
   input: document.getElementById("filter"),
   container: document.getElementById("container"),
 };
-console.log(DOMSelectors.container);
 DOMSelectors.button.addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList = "dark";
