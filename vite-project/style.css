@@ -26,7 +26,9 @@ select {
     top: 10px;
     right: 10px;
 }
-
+option {
+    font-size: 15px;
+}
 .filter {
     font-weight: 400;
     position: absolute;
