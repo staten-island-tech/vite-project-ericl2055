@@ -9,25 +9,26 @@ DOMSelectors.button.addEventListener("click", function () {
     DOMSelectors.input.classList = "light";
   }
 });
-filter(DOMSelectors.input);
-function filter() {
+
+DOMSelectors.input.addEventListener("change", function () {
   if (DOMSelectors.input.value == "val1") {
     all(products);
+    console.log(card);
   } else if ((DOMSelectors.input.value = "val2")) {
+    remove();
     ps(products);
-  } else if ((DOMSelectors.input = "val3")) {
+  } else if ((DOMSelectors.input.value = "val3")) {
+    remove();
     xbox(products);
-  } else if ((DOMSelectors.input.value = "val4")) {
+  } else {
+    remove();
     pc(products);
   }
-}
+});
 
-function remove() {
-  card = document.querySelectorAll("#card");
-  card.forEach((card) => {
-    card.target.parentElement.remove();
-  });
-}
+function remove() {}
+let card = document.querySelectorAll("#cards");
+
 function pc() {
   products
     .filter((products) => products.compatible.includes("PC"))
@@ -37,7 +38,7 @@ function pc() {
       let compatibility = products.compatible;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id = cards>
+        `<div class="cards" id = "cards">
       <h4> ${name}</h4>
       <h4>${price}</h4>
       <h5>${compatibility}</h5>  
@@ -55,7 +56,7 @@ function xbox() {
       let compatibility = products.compatible;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id = cards>
+        `<div class ="cards" id = cards>
       <h4> ${name}</h4>
       <h4>${price}</h4>
       <h5>${compatibility}</h5>  
@@ -72,7 +73,7 @@ function ps() {
       let compatibility = products.compatible;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div id = cards>
+        `<div class = "cards" id = cards>
       <h4> ${name}</h4>
       <h4>${price}</h4>
       <h5>${compatibility}</h5>  
@@ -87,7 +88,7 @@ function all() {
     let compatibility = products.compatible;
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div id = cards>
+      `<div class = "cards" id = cards>
       <h4> ${name}</h4>
       <h4>${price}</h4>
       <h5>${compatibility}</h5>  

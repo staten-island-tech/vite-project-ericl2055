@@ -26,6 +26,21 @@ const products = [
       "Nintendo Switch",
     ],
   },
+  {
+    name: "Mario Plus Rabbids Sparks of Hope",
+    price: "$59.99",
+    compatible: ["Nintendo Switch"],
+  },
+  {
+    name: "Sonic Frontiers",
+    price: " $59.99",
+    compatible: ["Xbox Series X/S", "PS5", "PS4", "Nintendo Switch"],
+  },
+  {
+    name: "Gotham Knights",
+    price: "$69.99",
+    compatible: ["Xbox Series X/S", "PS5"],
+  },
 ];
 
-export {products};
+export { products };

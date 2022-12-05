@@ -29,6 +29,12 @@ select {
 option {
     font-size: 15px;
 }
+.cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+}
 .filter {
     font-weight: 400;
     position: absolute;
