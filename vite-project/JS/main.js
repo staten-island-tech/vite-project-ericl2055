@@ -12,23 +12,28 @@ DOMSelectors.button.addEventListener("click", function () {
 
 DOMSelectors.input.addEventListener("change", function () {
   if (DOMSelectors.input.value == "val1") {
+    remove();
     all(products);
-    console.log(card);
-  } else if ((DOMSelectors.input.value = "val2")) {
+  }
+  if (DOMSelectors.input.value == "val2") {
     remove();
     ps(products);
-  } else if ((DOMSelectors.input.value = "val3")) {
+  }
+  if (DOMSelectors.input.value == "val3") {
     remove();
     xbox(products);
-  } else {
+  }
+  if (DOMSelectors.input.value == "val4") {
     remove();
     pc(products);
   }
 });
-
-function remove() {}
-let card = document.querySelectorAll("#cards");
-
+function remove() {
+  let card = document.querySelectorAll("#cards");
+  card.forEach((card) => {
+    card.remove();
+  });
+}
 function pc() {
   products
     .filter((products) => products.compatible.includes("PC"))
@@ -36,9 +41,11 @@ function pc() {
       let name = products.name;
       let price = products.price;
       let compatibility = products.compatible;
+      let image = products.image;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
         `<div class="cards" id = "cards">
+      <img src =${image}>
       <h4> ${name}</h4>
       <h4>${price}</h4>
       <h5>${compatibility}</h5>  
@@ -54,9 +61,11 @@ function xbox() {
       let name = products.name;
       let price = products.price;
       let compatibility = products.compatible;
+      let image = products.image;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div class ="cards" id = cards>
+        `<div class ="cards" id = "cards">
+        <img src =${image}>
       <h4> ${name}</h4>
       <h4>${price}</h4>
       <h5>${compatibility}</h5>  
@@ -71,9 +80,11 @@ function ps() {
       let name = products.name;
       let price = products.price;
       let compatibility = products.compatible;
+      let image = products.image;
       DOMSelectors.container.insertAdjacentHTML(
         "beforeend",
-        `<div class = "cards" id = cards>
+        `<div class = "cards" id = "cards">
+        <img src =${image}>
       <h4> ${name}</h4>
       <h4>${price}</h4>
       <h5>${compatibility}</h5>  
@@ -86,9 +97,11 @@ function all() {
     let name = products.name;
     let price = products.price;
     let compatibility = products.compatible;
+    let image = products.image;
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "cards" id = cards>
+      `<div class = "cards" id = "cards">
+      <img src =${image}>
       <h4> ${name}</h4>
       <h4>${price}</h4>
       <h5>${compatibility}</h5>  

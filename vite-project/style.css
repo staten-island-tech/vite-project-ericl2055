@@ -26,6 +26,13 @@ select {
     top: 10px;
     right: 10px;
 }
+img {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
 option {
     font-size: 15px;
 }
