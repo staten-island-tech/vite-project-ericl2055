@@ -9,7 +9,7 @@ DOMSelectors.button.addEventListener("click", function () {
     DOMSelectors.input.classList = "light";
   }
 });
-
+all();
 DOMSelectors.input.addEventListener("change", function () {
   if (DOMSelectors.input.value == "val1") {
     remove();

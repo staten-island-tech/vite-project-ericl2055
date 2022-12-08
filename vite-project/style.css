@@ -28,10 +28,11 @@ select {
 }
 img {
     height: 200px;
-    width: 200px;
     display: flex;
     justify-content: center;
     margin: auto;
+    border-style: solid;
+
 }
 option {
     font-size: 15px;
@@ -40,7 +41,8 @@ option {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    margin-top: 20px;
+    border-style: solid;
+    margin: 30px;
 }
 .filter {
     font-weight: 400;
