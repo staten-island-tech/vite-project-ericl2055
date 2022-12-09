@@ -67,6 +67,27 @@ const products = [
     image: "https://cdn.akamai.steamstatic.com/store/home/store_home_share.jpg",
     compatible: ["PC"],
   },
+  {
+    name: "Animal Crossing: New Horizons",
+    price: "$59.99",
+    image:
+      "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/hero",
+    compatible: ["Nintendo Switch"],
+  },
+  {
+    name: "Call of Duty: Vanguard",
+    price: "$59.99",
+    image:
+      "https://assets-prd.ignimgs.com/2021/08/17/call-of-duty-vanguard-button-00-1629164778736.jpg",
+    compatible: ["PS5", "PS4", "PC", "Xbox Series X/S", "Xbox One"],
+  },
+  {
+    name: "Madden NFL 23",
+    price: "$69.99",
+    image:
+      "https://cdn1.epicgames.com/offer/5f4daf40211246acaddd707f7b4e8f56/EGS_MaddenNFL23AllMaddenEdition_Tiburon_Editions_S1_2560x1440-9a69f79e3c321102fca060162eda2736",
+    compatible: ["PS5", "PS4", "PC", "Xbox Series X/S", "Xbox One"],
+  },
 ];
 
 export { products };

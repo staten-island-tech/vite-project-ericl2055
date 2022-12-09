@@ -38,11 +38,7 @@ option {
     font-size: 15px;
 }
 .cards {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    border-style: solid;
-    margin: 30px;
+    margin: 20px;
 }
 .filter {
     font-weight: 400;
